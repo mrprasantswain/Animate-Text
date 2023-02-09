@@ -1,0 +1,20 @@
+
+    *{
+      margin: 0; padding: 0; outline: none; box-sizing: border-box; text-decoration: none;
+    }
+    body{
+      width: 100%; min-height: 100vh; display: grid; place-items: center; background: teal;
+    }
+    .text_container{
+      background: #123; width: 95%; padding: 10px 0px; text-align: center; color: #fff; border-radius: 5px; letter-spacing: -2px; overflow: hidden;
+    }
+    .text_container span{
+      display: inline-block; transform: translate3d(0, 50px, 0);
+      transition: transform 1.15s cubic-bezier(0.6, 0, 0.2, 1); font-weight: 900; text-transform: uppercase;
+    }
+    .text_container span.AnimateText{
+      transform: translate3d(0, 0, 0);
+    }
+    .text_container span.AnimateText.remove{
+      transform: translate3d(0, -50px, 0);
+    }
